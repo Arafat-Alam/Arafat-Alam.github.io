@@ -6,7 +6,7 @@ var staticCache = 'v0.01';
 // Files to cache
 var files = [
     './',
-    './breakOut.html',
+    './index.html',
     './assets/JS/index.js',
     './img/icon50x50.png',
     './img/icon80x80.png',
