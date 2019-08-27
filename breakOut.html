@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap stuff -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Weather PWA">
+
+    <!-- CODELAB: Add description here -->
+    <meta name="description" content="A sample weather app">
+
+    <!-- CODELAB: Add meta theme-color -->
+    <meta name="theme-color" content="#2F3BA2"/>
+
+    <link rel="apple-touch-icon" href="img/icon50x50.png">
+    <link rel="manifest" href="manifest.json">
+    <title>JQuery -- BreakOut</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BreakOut</title>
+    <style>* { padding: 0; margin: 0; } canvas { background: #eee; display: block; margin: 0 auto; }</style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="480" height="320"></canvas>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./assets/JS/index.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('http://localhost/pwa/service-worker.js').then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+
+
+        }
+
+
+        window.addEventListener('offline', () => {
+            console.log('Ops! We are offline');
+        });
+        window.addEventListener('online', () => {
+            console.log('Back Online');
+        });
+
+</script>
+
+</body>
+</html>

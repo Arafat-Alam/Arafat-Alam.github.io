@@ -1,0 +1,39 @@
+{
+  "name": "BreakOut",
+  "short_name": "BrOut",
+  "icons": [
+    {
+      "src": "./img/icon50x50.png",
+      "sizes": "50x50",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/icon80x80.png",
+      "sizes": "80x80",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/icon100x100.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/icon150x150.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    }
+   
+  ],
+  "start_url": "http://localhost/pwa/breakOut.html",
+  "display": "standalone",
+  "background_color": "#99d6ff",
+  "theme_color": "#99d6ff",
+  "splash_pages": null,
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.google.samples.apps.iosched"
+    }
+  ]
+}
